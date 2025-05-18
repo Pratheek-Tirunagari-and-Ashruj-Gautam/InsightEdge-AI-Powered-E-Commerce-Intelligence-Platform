@@ -1,4 +1,4 @@
-# E-Commerce Analytics System with LLM-Augmented Intelligence (Work in Progress)
+# E-Commerce Analytics System with LLM-Augmented Intelligence (Work in Progress) 
 
 ## Overview
 
