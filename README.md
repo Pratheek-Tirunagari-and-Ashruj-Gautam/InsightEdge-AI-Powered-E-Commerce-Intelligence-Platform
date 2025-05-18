@@ -63,9 +63,3 @@ Following is the link to the folder containing all the csv files needed to run t
 https://www.mediafire.com/folder/6h3yq2a50167g/Data
 
 
-
-This project is licensed under the MIT License.
-
-## Contact
-
-For inquiries, collaboration, or more information, please reach out via LinkedIn or email.
