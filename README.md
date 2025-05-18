@@ -8,7 +8,7 @@ This project presents a comprehensive e-commerce analytics system developed usin
 
 ##  Dataset
 
-This project uses the **Brazilian E-Commerce Public Dataset** from [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), which is a rich and realistic dataset covering:
+This project uses the **Brazilian E-Commerce Public Dataset** and added some more custom data from our side to make it more comprehensive and enriching.
 
 - Customer profiles and purchase history  
 - Order items, product details, and categories  
