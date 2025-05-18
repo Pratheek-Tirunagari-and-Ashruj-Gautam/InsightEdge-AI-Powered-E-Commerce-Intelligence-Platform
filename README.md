@@ -19,7 +19,7 @@ This project uses the **Brazilian E-Commerce Public Dataset** from [Kaggle](http
 This dataset provides a strong foundation for building SQL-based analytics and for exploring trends in customer behavior, delivery performance, and product sales.
 
  **Dataset Download**:  
-[https://www.mediafire.com/folder/6h3yq2a50167g/Data](https://www.mediafire.com/folder/6h3yq2a50167g/Data)
+[https://www.mediafire.com/file/j3yn49hxmsvklpk/Data.zip/file](https://www.mediafire.com/file/j3yn49hxmsvklpk/Data.zip/file)
 
 ---
 
