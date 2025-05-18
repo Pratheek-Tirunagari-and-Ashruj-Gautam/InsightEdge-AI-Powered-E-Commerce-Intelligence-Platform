@@ -68,7 +68,7 @@ We are extending the system by incorporating **LLMs (Large Language Models)** to
 - Real-time dashboard using **Gradio** or **Streamlit**
 - Integration with **Power BI** or **Tableau** for visual summaries
 
-### 📈 Intended Use Cases
+###  Intended Use Cases
 - NLP-driven summaries of SQL outputs for business stakeholders
 - Automatic tagging and classification of customer issues
 - Sentiment trend tracking based on interaction scores over time
@@ -86,5 +86,5 @@ We are extending the system by incorporating **LLMs (Large Language Models)** to
 
 ##  Project Status
 
-- ✅ SQL infrastructure and analytics system completed  
-- ⚙️ LLM integration module under development (ETA: ~6–8 weeks)  
+-  SQL infrastructure and analytics system completed  
+-  LLM integration module under development (ETA: ~6–8 weeks)  
