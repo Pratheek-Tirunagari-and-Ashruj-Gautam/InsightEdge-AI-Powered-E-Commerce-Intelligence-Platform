@@ -47,7 +47,7 @@ This dataset provides a strong foundation for building SQL-based analytics and f
 
 ---
 
-### 🗺 ER Diagram
+###  ER Diagram
 
 Below is the Entity-Relationship diagram representing the full schema used in the analytics system:
 
@@ -84,7 +84,7 @@ We are extending the system by incorporating **LLMs (Large Language Models)** to
 
 ---
 
-## 📌 Project Status
+##  Project Status
 
 - ✅ SQL infrastructure and analytics system completed  
 - ⚙️ LLM integration module under development (ETA: ~6–8 weeks)  
