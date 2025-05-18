@@ -25,7 +25,7 @@ This dataset provides a strong foundation for building SQL-based analytics and f
 
 ## Phase 1: PostgreSQL-Based Analytics System
 
-### 🛠️ Technologies Used
+###  Technologies Used
 - PostgreSQL
 - SQL (DDL, DML, analytical queries)
 - PL/pgSQL (stored procedures, triggers)
