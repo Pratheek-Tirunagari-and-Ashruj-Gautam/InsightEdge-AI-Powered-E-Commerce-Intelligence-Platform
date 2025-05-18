@@ -55,6 +55,10 @@ The project is being expanded to incorporate LLMs for deriving insights from uns
 
 - SQL infrastructure and analytics complete
 - LLM integration and NLP module under development (Expected completion in ~6–8 weeks)
+  
+## Dataset used 
+
+https://www.mediafire.com/folder/6h3yq2a50167g/Data
 
 ## License
 
