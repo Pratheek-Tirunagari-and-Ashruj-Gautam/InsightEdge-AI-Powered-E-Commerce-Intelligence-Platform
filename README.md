@@ -46,10 +46,10 @@ The project is being expanded to incorporate LLMs for deriving insights from uns
 
 ## Authors and Contributions
 
-| Name               | Contributions                                              |
-|--------------------|------------------------------------------------------------|
-| Pratheek Tirunagari| Schema design, stored procedures, analytics queries, indexing, documentation |
-| Ashruj Gautam      | Trigger mechanisms, performance analysis, advanced SELECT queries, data maintenance logic |
+| Name                    | Contributions                                              |
+|-------------------------|------------------------------------------------------------|
+| Pratheek Tirunagari     | Schema design, stored procedures, analytics queries, indexing, documentation |
+| Ashruj Gautam           | Trigger mechanisms, performance analysis, advanced SELECT queries, data maintenance logic |
 
 ## Project Status
 
