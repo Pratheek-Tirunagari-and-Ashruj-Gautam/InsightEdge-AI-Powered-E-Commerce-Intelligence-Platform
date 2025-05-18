@@ -1,4 +1,4 @@
-# 📊 E-Commerce Analytics System with LLM-Augmented Intelligence (Work in Progress)
+#  E-Commerce Analytics System with LLM-Augmented Intelligence (Work in Progress)
 
 ## Overview
 
@@ -6,7 +6,7 @@ This project presents a comprehensive e-commerce analytics system developed usin
 
 ---
 
-## 📦 Dataset
+##  Dataset
 
 This project uses the **Brazilian E-Commerce Public Dataset** from [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), which is a rich and realistic dataset covering:
 
@@ -18,7 +18,7 @@ This project uses the **Brazilian E-Commerce Public Dataset** from [Kaggle](http
 
 This dataset provides a strong foundation for building SQL-based analytics and for exploring trends in customer behavior, delivery performance, and product sales.
 
-📁 **Dataset Download**:  
+ **Dataset Download**:  
 [https://www.mediafire.com/folder/6h3yq2a50167g/Data](https://www.mediafire.com/folder/6h3yq2a50167g/Data)
 
 ---
@@ -32,7 +32,7 @@ This dataset provides a strong foundation for building SQL-based analytics and f
 - Indexing and query optimization
 - Dataset: Brazilian E-Commerce (Olist) from Kaggle
 
-### ✅ Core Features Implemented
+###  Core Features Implemented
 - Structured schema with 11+ interconnected tables representing customers, orders, products, payments, geolocation, and more
 - Data cleaning and loading using SQL scripts
 - Complex queries for sales trends, delivery delays, seller rankings, and customer behavior
@@ -40,14 +40,14 @@ This dataset provides a strong foundation for building SQL-based analytics and f
 - Triggers for error logging and data integrity
 - Performance tuning using `EXPLAIN ANALYZE` and targeted indexing strategies
 
-### 📄 Deliverables
+###  Deliverables
 - `load_create.sql`: Defines all table schemas, constraints, and data load operations
 - `sql project 2.sql`: Includes core SQL logic — CRUD operations, business analytics, functions, triggers, and indexes
 - `Phase2report.pdf`: Detailed project documentation covering schema design, use cases, ER diagrams, query logic, and performance optimization
 
 ---
 
-### 🗺️ ER Diagram
+### 🗺 ER Diagram
 
 Below is the Entity-Relationship diagram representing the full schema used in the analytics system:
 
@@ -59,7 +59,7 @@ Below is the Entity-Relationship diagram representing the full schema used in th
 
 We are extending the system by incorporating **LLMs (Large Language Models)** to extract insights from unstructured customer data and generate human-readable reports.
 
-### 🧠 Planned Additions
+###  Planned Additions
 - Python modules for:
   - Summarizing free-text customer feedback
   - Classifying issues (e.g., delivery problems, product quality, etc.)
@@ -75,7 +75,7 @@ We are extending the system by incorporating **LLMs (Large Language Models)** to
 
 ---
 
-## 👥 Authors and Contributions
+##  Authors and Contributions
 
 | Name                | Contributions                                                                 |
 |---------------------|------------------------------------------------------------------------------|
