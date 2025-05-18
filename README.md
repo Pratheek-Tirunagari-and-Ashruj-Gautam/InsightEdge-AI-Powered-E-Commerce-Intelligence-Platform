@@ -56,11 +56,13 @@ The project is being expanded to incorporate LLMs for deriving insights from uns
 - SQL infrastructure and analytics complete
 - LLM integration and NLP module under development (Expected completion in ~6–8 weeks)
   
-## Dataset used 
+## Dataset
+
+Following is the link to the folder containing all the csv files needed to run the project
 
 https://www.mediafire.com/folder/6h3yq2a50167g/Data
 
-## License
+
 
 This project is licensed under the MIT License.
 
