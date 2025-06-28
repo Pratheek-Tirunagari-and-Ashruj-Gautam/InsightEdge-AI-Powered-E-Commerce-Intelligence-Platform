@@ -5,7 +5,7 @@
 This project presents a comprehensive e-commerce analytics system developed using **PostgreSQL**, based on the **Brazilian E-Commerce Public Dataset**. It is designed to enable scalable storage, efficient querying, and insightful reporting of customer, order, payment, and seller data. The system is currently being extended with **LLM-powered capabilities** to support intelligent text analysis and automated business reporting.
 
 ---
-
+ 
 ##  Dataset
 
 This project uses the **Brazilian E-Commerce Public Dataset** and on top of that we have added some more custom data files from our side to make it more comprehensive and enriching.
