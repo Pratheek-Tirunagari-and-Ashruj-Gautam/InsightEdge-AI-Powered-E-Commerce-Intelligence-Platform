@@ -148,7 +148,16 @@ Alternatively use pgAdmin: **Right-click table → Import/Export Data → Select
 | Name | Contributions |
 |------|--------------|
 | **Pratheek Tirunagari** | Schema design, LLM integration (Groq/LLaMA 3), Streamlit dashboard development, cloud deployment (Supabase + Streamlit Cloud), stored procedures, analytics queries, indexing and query optimization, documentation |
-| **Ashruj Gautam** | Trigger design and implementation, query performance analysis using EXPLAIN ANALYZE, advanced SELECT queries for business reporting, data integrity logic, and maintenance of table relationships |
+| **Ashruj Gautam** | Trigger design and implementation, query performance analysis using EXPLAIN ANALYZE, advanced SELECT queries for business reporting, data integrity enforcement, table relationship maintenance, and testing |
+
+---
+
+## Project Status
+
+- ✅ SQL infrastructure and analytics system completed
+- ✅ LLM integration completed (Groq API — LLaMA 3.3 70B)
+- ✅ Streamlit dashboard completed
+- ✅ Full cloud deployment live
 
 ---
 
