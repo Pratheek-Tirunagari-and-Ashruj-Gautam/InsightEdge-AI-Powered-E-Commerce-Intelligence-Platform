@@ -21,8 +21,8 @@ from db_connection import run_query
 load_dotenv()
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-MODEL = "llama3-8b-8192"
-
+#MODEL = "llama3-8b-8192"
+MODEL = "llama-3.3-70b-versatile"
 
 def _ask_groq(prompt: str, max_tokens: int = 600) -> str:
     """Send a prompt to Groq (LLaMA 3) and return the response text."""
