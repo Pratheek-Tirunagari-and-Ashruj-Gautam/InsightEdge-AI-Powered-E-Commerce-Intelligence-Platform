@@ -74,6 +74,61 @@ We are extending the system by incorporating **LLMs (Large Language Models)** to
 - Sentiment trend tracking based on interaction scores over time
 
 ---
+### Common Setup Issue: CSV Path / Permission Error in PostgreSQL
+
+When loading CSV files into PostgreSQL using the `COPY` command, some users may encounter the following error:
+
+```
+ERROR: could not open file ".../customers.csv" for reading: Permission denied
+HINT: COPY FROM instructs the PostgreSQL server process to read a file.
+```
+
+This occurs because the `COPY` command is executed by the **PostgreSQL server process**, not by the pgAdmin client. As a result, the PostgreSQL service must have permission to access the directory containing the CSV files. Files located in personal directories (e.g., `C:\Users\...`) are often inaccessible to the PostgreSQL service.
+
+#### Solution
+
+1. Create a folder that PostgreSQL can access, for example:
+
+```
+C:\pg_import
+```
+
+2. Move all dataset CSV files into this folder:
+
+```
+C:\pg_import\customers.csv
+C:\pg_import\orders.csv
+C:\pg_import\order_items.csv
+...
+```
+
+3. Update the file paths in `load_create.sql` to reference this directory. Use **forward slashes** (`/`) in PostgreSQL paths:
+
+```sql
+COPY customers
+FROM 'C:/pg_import/customers.csv'
+WITH (FORMAT csv, HEADER true);
+```
+
+4. If permission errors persist, grant read access to the PostgreSQL service account:
+
+   * Open **Services** (`services.msc`)
+   * Locate the PostgreSQL service (e.g., `postgresql-x64-15`)
+   * Check the **Log On** tab to see which account runs the service
+   * Give that account **Read permissions** to the `C:\pg_import` folder via folder **Security settings**
+
+After these steps, the `COPY` commands should successfully load the CSV datasets into the database.
+
+#### Alternative (pgAdmin GUI Method)
+
+If permissions cannot be modified, another option is to import data through pgAdmin:
+
+```
+Right-click table → Import/Export Data → Select CSV → Enable "Header"
+```
+
+This method bypasses the PostgreSQL server file permission restriction.
+
 
 ##  Authors and Contributions
 
