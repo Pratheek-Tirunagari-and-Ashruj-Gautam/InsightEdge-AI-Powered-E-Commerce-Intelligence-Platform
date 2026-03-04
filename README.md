@@ -1,145 +1,160 @@
-#  E-Commerce Analytics System with LLM-Augmented Intelligence (Work in Progress)
+# E-Commerce Analytics System with LLM-Augmented Intelligence
 
 ## Overview
 
-This project presents a comprehensive e-commerce analytics system developed using **PostgreSQL**, based on the **Brazilian E-Commerce Public Dataset**. It is designed to enable scalable storage, efficient querying, and insightful reporting of customer, order, payment, and seller data. The system is currently being extended with **LLM-powered capabilities** to support intelligent text analysis and automated business reporting.
+A comprehensive e-commerce analytics platform built with **PostgreSQL**, **Python**, and **LLM-powered intelligence**, based on the **Brazilian E-Commerce Public Dataset**. The system enables scalable storage, efficient querying, and insightful reporting of customer, order, payment, and seller data — now fully deployed to the cloud with an interactive real-time dashboard.
+
+🔗 **Live App**: [https://dashboardpy-kd6kgsdnkpzg5s7wjd3uaf.streamlit.app/](https://dashboardpy-kd6kgsdnkpzg5s7wjd3uaf.streamlit.app/)
 
 ---
- 
-##  Dataset
 
-This project uses the **Brazilian E-Commerce Public Dataset** and on top of that we have added some more custom data files from our side to make it more comprehensive and enriching.
+## Dataset
 
-- Customer profiles and purchase history  
-- Order items, product details, and categories  
-- Sellers and geolocation data  
-- Payment methods and transaction values  
+This project uses the **Brazilian E-Commerce Public Dataset** extended with custom data files for richer analytics.
+
+- Customer profiles and purchase history
+- Order items, product details, and categories
+- Sellers and geolocation data
+- Payment methods and transaction values
 - Customer interactions, feedback scores, and web/social traffic
 
-This dataset provides a strong foundation for building SQL-based analytics and for exploring trends in customer behavior, delivery performance, and product sales.
-
- **Dataset Download**:  
+**Dataset Download**:
 [https://www.mediafire.com/file/j3yn49hxmsvklpk/Data.zip/file](https://www.mediafire.com/file/j3yn49hxmsvklpk/Data.zip/file)
 
 ---
 
-## Phase 1: PostgreSQL-Based Analytics System
+## Phase 1: PostgreSQL-Based Analytics System ✅
 
-###  Technologies Used
+### Technologies Used
 - PostgreSQL
 - SQL (DDL, DML, analytical queries)
 - PL/pgSQL (stored procedures, triggers)
 - Indexing and query optimization
-- Dataset: Brazilian E-Commerce (Olist) from Kaggle
 
-###  Core Features Implemented
-- Structured schema with 11+ interconnected tables representing customers, orders, products, payments, geolocation, and more
-- Data cleaning and loading using SQL scripts
-- Complex queries for sales trends, delivery delays, seller rankings, and customer behavior
+### Core Features
+- Structured schema with 11+ interconnected tables
+- Data cleaning and loading via SQL scripts
+- Complex queries for sales trends, delivery delays, seller rankings, and customer behaviour
 - Stored procedures for customer and order management workflows
 - Triggers for error logging and data integrity
-- Performance tuning using `EXPLAIN ANALYZE` and targeted indexing strategies
+- Performance tuning using `EXPLAIN ANALYZE` and targeted indexing
 
-###  Deliverables
-- `load_create.sql`: Defines all table schemas, constraints, and data load operations
-- `sql project 2.sql`: Includes core SQL logic — CRUD operations, business analytics, functions, triggers, and indexes
-- `Phase2report.pdf`: Detailed project documentation covering schema design, use cases, ER diagrams, query logic, and performance optimization
+### Deliverables
+- `load_create.sql` — Table schemas, constraints, and data load operations
+- `sql project 2.sql` — Core SQL logic including CRUD, analytics, functions, triggers, and indexes
+- `Phase2report.pdf` — Full documentation covering schema design, ER diagrams, query logic, and performance optimization
 
----
-
-###  ER Diagram
-
-Below is the Entity-Relationship diagram representing the full schema used in the analytics system:
+### ER Diagram
 
 ![ER Diagram](er_diagram.png)
 
 ---
 
-## Phase 2: Integration of Large Language Models (In Progress)
+## Phase 2: LLM-Augmented Intelligence ✅
 
-We are extending the system by incorporating **LLMs (Large Language Models)** to extract insights from unstructured customer data and generate human-readable reports.
+The system is extended with **LLaMA 3 via Groq API** to extract insights from unstructured customer data and generate human-readable reports.
 
-###  Planned Additions
-- Python modules for:
-  - Summarizing free-text customer feedback
-  - Classifying issues (e.g., delivery problems, product quality, etc.)
-  - Generating executive summaries of monthly performance metrics
-- Fine-tuning an open-source 7B LLM (e.g., **Mistral** or **LLaMA 2**) using QLoRA on an RTX 4090 setup
-- Real-time dashboard using **Gradio** or **Streamlit**
-- Integration with **Power BI** or **Tableau** for visual summaries
+### Features Implemented
+- **Customer Feedback Summariser** — Analyses recent interaction records and summarises sentiment and themes
+- **Issue Classifier** — Classifies free-text customer complaints into categories (Delivery, Quality, Payment, etc.)
+- **Monthly Executive Report Generator** — Pulls key metrics from PostgreSQL and generates a professional business summary
 
-###  Intended Use Cases
-- NLP-driven summaries of SQL outputs for business stakeholders
-- Automatic tagging and classification of customer issues
-- Sentiment trend tracking based on interaction scores over time
+### Technologies Used
+- Groq API (LLaMA 3.3 70B) — free tier
+- Python (`groq` SDK)
+- `psycopg2` for PostgreSQL connectivity
 
 ---
+
+## Phase 3: Cloud Deployment ✅
+
+The full system is deployed to the cloud using a free-tier stack with no payment details required.
+
+| Component | Service |
+|-----------|---------|
+| Database | Supabase (PostgreSQL, free tier) |
+| LLM | Groq API (LLaMA 3.3 70B, free tier) |
+| Dashboard | Streamlit Community Cloud (free tier) |
+
+### Data Migrated to Supabase
+- 99,442 orders
+- 1,000,163 geolocation records
+- 112,650 order items
+- 3,000 customers
+- 3,001 sellers
+- 99,441 products
+- 103,886 payments
+- 32,951 social media mentions
+- 3,095 ecommerce traffic records
+- 3,000 customer interactions
+
+---
+
+## Local Setup
+
+### Prerequisites
+- Python 3.10+
+- PostgreSQL (local) or Supabase account
+- Groq API key (free at [https://console.groq.com](https://console.groq.com))
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Pratheek-Tirunagari-and-Ashruj-Gautam/InsightEdge-AI-Powered-E-Commerce-Intelligence-Platform
+cd InsightEdge-AI-Powered-E-Commerce-Intelligence-Platform
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Create a `.env` file:
+```
+DB_HOST=your_db_host
+DB_PORT=5432
+DB_NAME=postgres
+DB_USER=your_db_user
+DB_PASSWORD=your_db_password
+GROQ_API_KEY=your_groq_api_key
+```
+
+4. Run the dashboard:
+```bash
+streamlit run dashboard.py
+```
+
+---
+
 ### Common Setup Issue: CSV Path / Permission Error in PostgreSQL
 
-When loading CSV files into PostgreSQL using the `COPY` command, some users may encounter the following error:
-
+When loading CSVs using the `COPY` command you may encounter:
 ```
-ERROR: could not open file ".../customers.csv" for reading: Permission denied
-HINT: COPY FROM instructs the PostgreSQL server process to read a file.
+ERROR: could not open file "..." for reading: Permission denied
 ```
 
-This occurs because the `COPY` command is executed by the **PostgreSQL server process**, not by the pgAdmin client. As a result, the PostgreSQL service must have permission to access the directory containing the CSV files. Files located in personal directories (e.g., `C:\Users\...`) are often inaccessible to the PostgreSQL service.
-
-#### Solution
-
-1. Create a folder that PostgreSQL can access, for example:
-
-```
-C:\pg_import
-```
-
-2. Move all dataset CSV files into this folder:
-
-```
-C:\pg_import\customers.csv
-C:\pg_import\orders.csv
-C:\pg_import\order_items.csv
-...
-```
-
-3. Update the file paths in `load_create.sql` to reference this directory. Use **forward slashes** (`/`) in PostgreSQL paths:
-
+**Solution**: Move CSV files to `C:\pg_import\` and update paths in `load_create.sql` to use forward slashes:
 ```sql
-COPY customers
-FROM 'C:/pg_import/customers.csv'
-WITH (FORMAT csv, HEADER true);
+COPY customers FROM 'C:/pg_import/customers.csv' WITH (FORMAT csv, HEADER true);
 ```
 
-4. If permission errors persist, grant read access to the PostgreSQL service account:
-
-   * Open **Services** (`services.msc`)
-   * Locate the PostgreSQL service (e.g., `postgresql-x64-15`)
-   * Check the **Log On** tab to see which account runs the service
-   * Give that account **Read permissions** to the `C:\pg_import` folder via folder **Security settings**
-
-After these steps, the `COPY` commands should successfully load the CSV datasets into the database.
-
-#### Alternative (pgAdmin GUI Method)
-
-If permissions cannot be modified, another option is to import data through pgAdmin:
-
-```
-Right-click table → Import/Export Data → Select CSV → Enable "Header"
-```
-
-This method bypasses the PostgreSQL server file permission restriction.
-
-
-##  Authors and Contributions
-
-| Name                | Contributions                                                                 |
-|---------------------|------------------------------------------------------------------------------|
-| **Pratheek Tirunagari** | Schema design, stored procedures, analytics queries, indexing, documentation |
-| **Ashruj Gautam**       | Trigger mechanisms, performance analysis, advanced SELECT queries, data maintenance logic |
+Alternatively use pgAdmin: **Right-click table → Import/Export Data → Select CSV → Enable Header**
 
 ---
 
-##  Project Status
+## Authors
 
--  SQL infrastructure and analytics system completed  
--  LLM integration module under development (ETA: ~6–8 weeks)  
+| Name | Contributions |
+|------|--------------|
+| **Pratheek Tirunagari** | Schema design, LLM integration (Groq/LLaMA 3), Streamlit dashboard development, cloud deployment (Supabase + Streamlit Cloud), stored procedures, analytics queries, indexing and query optimization, documentation |
+| **Ashruj Gautam** | Trigger design and implementation, query performance analysis using EXPLAIN ANALYZE, advanced SELECT queries for business reporting, data integrity logic, and maintenance of table relationships |
+
+---
+
+## Project Status
+
+- ✅ SQL infrastructure and analytics system completed
+- ✅ LLM integration completed (Groq API — LLaMA 3.3 70B)
+- ✅ Streamlit dashboard completed
+- ✅ Full cloud deployment live
